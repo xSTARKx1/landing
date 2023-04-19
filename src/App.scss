@@ -1,6 +1,17 @@
 .app {
   width: 1168px;
   margin: 0 auto;
+  opacity:0;
+  transition: 1s;
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+
+  @keyframes show{
+    0%{ opacity:0; }
+    100% { opacity:1; }
+  }
+
 
   &__header {
     display: flex;
@@ -33,6 +44,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 125px;
+    opacity:0;
+    transition: 1s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+    @keyframes show{
+      0%{ opacity:0; }
+      100% { opacity:1; }
+    }
 
     &--text-wrapper {
       display: flex;
