@@ -12,9 +12,6 @@
     margin-bottom: 60px;
   }
 
-  &__image-container {
-    width: 239px;
-  }
 
   &__image {
     display: inline-block;
@@ -23,6 +20,11 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 0.3s linear;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 
   .slick-prev,

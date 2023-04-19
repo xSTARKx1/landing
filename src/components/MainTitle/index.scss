@@ -8,6 +8,11 @@
   width: 503px;
   position: relative;
 
+  @media (max-width: 425px) {
+    width: 100%;
+    text-align: center;
+  }
+
 &__rotating-text {
     transform: rotate(10.48deg);
     display: inline-block;
