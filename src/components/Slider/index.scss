@@ -1,0 +1,100 @@
+.slider {
+  text-align: center;
+  margin-bottom: 62px;
+
+  &__title {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 117.7%;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+
+  &__image-container {
+    width: 239px;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 239px;
+    height: 304px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    display: block;
+    height: 76px;
+    width: 76px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    z-index: 1;
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: transparent;
+
+      &:before {
+        opacity: 1;
+        transition: opacity 0.2s linear;
+      }
+    }
+    &.slick-disabled:before {
+      opacity: 0.25;
+
+    }
+    &:before {
+      font-size: 20px;
+      line-height: 1;
+      color: white;
+      opacity: 0.75;
+      transition: opacity 0.2s linear;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  .slick-prev {
+    left: -25px;
+
+    &:before {
+      content: '';
+      rotate: 180deg;
+      display: block;
+      width: 76px;
+      height: 76px;
+      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 46px;
+      background: #FFFFFF url('../../assets/arrorw.svg') no-repeat center center;
+    }
+  }
+
+  .slick-next {
+    right: -25px;
+    &:before {
+      content: '';
+      display: block;
+      width: 76px;
+      height: 76px;
+      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 46px;
+      background: #FFFFFF url('../../assets/arrorw.svg') no-repeat center center;
+    }
+  }
+}

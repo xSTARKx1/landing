@@ -1,0 +1,23 @@
+.main-title {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 106px;
+  color: #000000;
+  width: 503px;
+  position: relative;
+
+  &__rotating-text {
+    transform: rotate(10.48deg);
+    display: inline-block;
+    background: #BAFD37;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+  }
+
+  &__star {
+    position: absolute;
+    right: 0;
+  }
+}

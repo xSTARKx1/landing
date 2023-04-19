@@ -1,0 +1,36 @@
+.icons {
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+
+  .icons__wrapper {
+    display: flex;
+    margin-bottom: 12px;
+
+    .icons__apple {
+      width: 55px;
+      height: 55px;
+      border: 1px solid #E1E3E9;
+      border-radius: 50%;
+      background: #2D3240 url('../../assets/apple.svg') no-repeat center center;
+      display: block;
+    }
+
+    .icons__android {
+      width: 55px;
+      height: 55px;
+      border: 1px solid #E1E3E9;
+      border-radius: 50%;
+      background: #2D3240 url('../../assets/android.svg') no-repeat center center;
+      display: block;
+      position: relative;
+      left: -12px;
+    }
+  }
+}
